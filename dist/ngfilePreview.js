@@ -134,7 +134,10 @@ angular.module('ngFilePreview', [])
 
 
 				try {
-					scope.previewUrl = scope.previewUrl ? scope.previewUrl : scope.FileType.preview.thumbnail;
+					if(!scope.FileType.preview.showIcon)
+						scope.previewUrl = scope.previewUrl ? scope.previewUrl : scope.FileType.preview.thumbnail;
+					else
+						scope.previewUrl = arquivo
 				} catch (e) {
 					if(!(!scope.FileType))
 						console.log('error loading preview, check the config.')
