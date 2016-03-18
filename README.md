@@ -16,10 +16,17 @@ A preview that detect the type of the file and changes accordingly
     <div class="contentPreview"></div>
 </file-preview>`
 3. Change the config with the provicer<br />
-´angular.module('MyApp').config(['filePreviewProvider', function (filePreviewProvider) {
-		filePreviewProvider.setFallbackImage('/Content/images/sample-image.png')
-});
-´
+`angular.module('MyApp').config(['filePreviewProvider', function (filePreviewProvider) {
+	filePreviewProvider.setFallbackImage('/Content/images/sample-image.png')
+	
+	//to change the thumbnails.
+	filePreviewProvider.setFallbackImage('/Content/images/semImagem.png')
+	filePreviewProvider.types.image.showIcon = true;
+	filePreviewProvider.types.video.thumbnail = "/Content/images/file_videos.png";
+	filePreviewProvider.types.flash.thumbnail = "/Content/images/file_flash.png"
+	filePreviewProvider.types.audio.thumbnail = "/Content/images/file_audio.png"
+	filePreviewProvider.types.htmlFive.thumbnail = "/Content/images/file_html5.png"
+});`
 I'll update this, with basic sample as soon as possible.
 
 
