@@ -79,8 +79,7 @@ angular.module('ngFilePreview', [])
 			width: '@',
 			height: '@',
 			urlFile: '=',
-			Thumbnail: '=',
-			fileid: '@',
+			thumbnail: '=',
 			autoplay: '@',
 		},
 		link: function (scope, element, attrs) {
