@@ -54,12 +54,12 @@ angular.module('ngFilePreview', [])
 
 	this.detectFile = function (file) {
 		var typeFile = { preview: { thumbnail: 'data:image/png;base64,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', showIcon: true } }
-		
-		if(file && !angular.isObject(file))
-			file = file.indexOf("data:image")? file: file.toLowerCase();
+
+		if (file && !angular.isObject(file))
+			file = file.indexOf("data:image") ? file : file.toLowerCase();
 		else
 			return typeFile;
-		
+
 		for (var i = 0; i < this.files.length ; i++) {
 			if (file.indexOf(this.files[i].extension) > 0) {
 				typeFile = this.files[i];
@@ -74,7 +74,7 @@ angular.module('ngFilePreview', [])
 	};
 
 })
-.directive('filePreview',['$compile', 'filePreview',function ($compile, filePreview) {
+.directive('filePreview', ['$compile', 'filePreview', function ($compile, filePreview) {
 	return {
 		restrict: 'AE',
 		scope: {
@@ -87,13 +87,13 @@ angular.module('ngFilePreview', [])
 		link: function (scope, element, attrs) {
 			scope.createdWidget = false;
 			var watchlist = [];
-			
+
 			scope.urlFallbackImage = filePreview.urlFallbackImage;
 
 			watchlist.push(scope.$watch("urlFile", function (r) {
 				scope.createdWidget = false;
 				scope.playing = false;
-				
+
 				scope.FileType = filePreview.detectFile(scope.urlFile);
 				var player = detectPlayer(scope.urlFile);
 				scope.watch = player.function;
@@ -115,6 +115,7 @@ angular.module('ngFilePreview', [])
 			function Start() {
 				var player = detectPlayer(scope.urlFile);
 				replacePlayer(player.template, element);
+				scope.toggleFullScreen = setFullScreenButton;
 			}
 			function replacePlayer(html) {
 				var e = $compile(html)(scope);
@@ -137,12 +138,12 @@ angular.module('ngFilePreview', [])
 
 
 				try {
-					if(!scope.FileType.preview.showIcon)
+					if (!scope.FileType.preview.showIcon)
 						scope.previewUrl = scope.FileType.preview.thumbnail;
 					else
 						scope.previewUrl = arquivo
 				} catch (e) {
-					if(!(!scope.FileType))
+					if (!(!scope.FileType))
 						console.log('error loading preview, check the config.')
 				}
 
@@ -160,7 +161,6 @@ angular.module('ngFilePreview', [])
 				template.push("<img ng-src=\"{{previewUrl}}\" style=\"height: {{height}}px\" border=\"0\" ng-hide='playing' fallback-src='{{urlFallbackImage}}'>");
 				template.push("</div>");
 				template.push("<div class='player'>");
-
 				template.push("</div>");
 
 
@@ -168,15 +168,30 @@ angular.module('ngFilePreview', [])
 
 				return player;
 			}
+			function setFullScreenButton() {
+				var e = element;
+				if ($(e).find('video').length > 0) {
+					var video = $(e).find('video')[0];
+					if (video.webkitSupportsFullscreen)
+						if (!video.webkitDisplayingFullscreen) {
+							video.webkitRequestFullscreen();
+						} else {
+							video.webkitExitFullscreen()
+						}
+				}
+
+			}
 			function getTagVideoPlayer(file, w, h, autoplay) {
 				autoplay = autoplay == true ? 'autoplay' : '';
 				var objPlayer = [];
 
-				objPlayer.push('<video controls  width="100%" height="100%" ' + autoplay + '>');
+				objPlayer.push('<video controls  width="100%" height="100%" ' + autoplay + ' ng-dblclick="toggleFullScreen()" >');
 				objPlayer.push('<source src="' + file + '" type="video/mp4">');
 				//objPlayer.push('<source src="movie.ogg" type="video/ogg">');
 				objPlayer.push('Your browser does not support the video tag.');
 				objPlayer.push('</video>');
+
+
 				return objPlayer.join('');
 			}
 			function getswfPlayer(file, w, h) {
@@ -202,6 +217,7 @@ angular.module('ngFilePreview', [])
 
 
 			}
+
 			function getFlashPlayer(file, w, h) {
 				var objPlayer = [];
 				objPlayer.push("<object classid='clsid:d27cdb6e-ae6d-11cf-96b8-444553540000' codebase='http://download.macromedia.com/pub/shockwave/cabs/flash/swflash.cab#version=10,0,0,0' draggable='false'")
@@ -231,8 +247,9 @@ angular.module('ngFilePreview', [])
 
 					if (!videoElement.canPlayType)
 						return getFlashPlayer(file, w, h);
-					else
+					else {
 						return getTagVideoPlayer(file, w, h, autoplay);
+					}
 				}
 			}
 
