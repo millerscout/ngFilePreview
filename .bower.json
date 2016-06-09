@@ -1,0 +1,34 @@
+{
+  "name": "ngFilePreview",
+  "homepage": "https://github.com/millerscout/ngFilePreview",
+  "authors": [
+    "Antonio Marcos SS Jr. <amarcosjr@outlook.com.br>"
+  ],
+  "description": "Detects what kind of player should be used based on the file",
+  "main": "",
+  "moduleType": [],
+  "keywords": [
+    "filepreview",
+    "detect",
+    "player",
+    "dynamic",
+    "player"
+  ],
+  "license": "GNU GPL V3",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "_release": "e57b261bb1",
+  "_resolution": {
+    "type": "branch",
+    "branch": "master",
+    "commit": "e57b261bb1eddd25d7893d6a1cd114e7f1caf373"
+  },
+  "_source": "git://github.com/millerscout/ngFilePreview.git",
+  "_target": "*",
+  "_originalSource": "ngfilepreview"
+}
