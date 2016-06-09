@@ -87,8 +87,7 @@ angular.module('ngFilePreview', [])
 		link: function (scope, element, attrs) {
 			scope.createdWidget = false;
 			var watchlist = [];
-
-			debugger;
+			
 			scope.urlFallbackImage = filePreview.urlFallbackImage;
 
 			watchlist.push(scope.$watch("urlFile", function (r) {
